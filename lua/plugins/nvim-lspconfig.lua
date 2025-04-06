@@ -6,7 +6,7 @@ return {
 				-- Language Servers
 				"typescript-language-server",
 				"gopls",
-				"lua-language-server",
+				"lua_ls",
 			},
 		},
 	},

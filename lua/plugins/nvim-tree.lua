@@ -8,18 +8,15 @@ return {
 	config = function()
 		-- Set up nvim-tree with your custom configuration
 		require("nvim-tree").setup({
-			renderer = {
-				icons = {
-					glyphs = {
-						folder = {
-							arrow_open = "", -- Custom open folder icon
-							arrow_closed = "", -- Custom closed folder icon
-						},
-						file = {
-							default = "", -- Default file icon
-							symlink = "", -- Symlink icon
-						},
-					},
+			view = {
+				adaptive_size = true,
+			},
+			update_focused_file = {
+				enable = true,
+			},
+			actions = {
+				open_file = {
+					quit_on_open = true,
 				},
 			},
 			diagnostics = {

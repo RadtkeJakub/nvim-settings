@@ -7,9 +7,9 @@ return {
 		-- Ensure the specified LSP servers are installed
 		require("mason-lspconfig").setup({
 			ensure_installed = {
-				"typescript-language-server", -- For TypeScript
+				"ts_ls", -- For TypeScript
 				"gopls", -- For Go
-				"lua-language-server", -- For Lua
+				"lua_ls", -- For Lua
 			},
 			automatic_installation = true, -- Automatically install LSP servers if not installed
 		})
