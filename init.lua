@@ -33,5 +33,6 @@ require("lazy").setup({
 	checker = { enabled = true },
 })
 require("mason").setup()
+require("nvim-dap-virtual-text").setup()
 require("user.options")
 require("user.keymaps")
